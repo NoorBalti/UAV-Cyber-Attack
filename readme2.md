@@ -39,41 +39,7 @@ The framework enables researchers and students to:
 
 ## System Architecture
 
-```text
-                     ┌─────────────────┐
-                     │ Gazebo Harmonic │
-                     └────────┬────────┘
-                              │
-                              ▼
-                     ┌─────────────────┐
-                     │ GPS Sensor Data │
-                     └────────┬────────┘
-                              │
-                              ▼
-                ┌─────────────────────────┐
-                │ ROS-Gazebo Bridge       │
-                └──────────┬──────────────┘
-                           │
-                           ▼
-                ┌─────────────────────────┐
-                │ GPS Listener Node       │
-                └──────────┬──────────────┘
-                           │
-                           ▼
-                ┌─────────────────────────┐
-                │ GPS Hijacker Node       │
-                └──────────┬──────────────┘
-                           │
-                           ▼
-                ┌─────────────────────────┐
-                │ PX4 Autopilot           │
-                └──────────┬──────────────┘
-                           │
-                           ▼
-                ┌─────────────────────────┐
-                │ QGroundControl          │
-                └─────────────────────────┘
-```
+<img width="889" height="683" alt="image" src="https://github.com/user-attachments/assets/3d577046-7f7a-477e-8cba-c45c19bb0ae1" />
 
 ---
 
