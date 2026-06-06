@@ -1,0 +1,18 @@
+running develop
+running egg_info
+writing gps_catcher.egg-info/PKG-INFO
+writing dependency_links to gps_catcher.egg-info/dependency_links.txt
+writing entry points to gps_catcher.egg-info/entry_points.txt
+writing requirements to gps_catcher.egg-info/requires.txt
+writing top-level names to gps_catcher.egg-info/top_level.txt
+reading manifest file 'gps_catcher.egg-info/SOURCES.txt'
+writing manifest file 'gps_catcher.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps-catcher.egg-link (link to .)
+Installing gps_listener script to /home/noor/gps_ws/install/gps_catcher/lib/gps_catcher
+Installing hijacker script to /home/noor/gps_ws/install/gps_catcher/lib/gps_catcher
+
+Installed /home/noor/gps_ws/build/gps_catcher
+running symlink_data
+symbolically linking /home/noor/gps_ws/build/gps_catcher/resource/gps_catcher -> /home/noor/gps_ws/install/gps_catcher/share/ament_index/resource_index/packages
+symbolically linking /home/noor/gps_ws/build/gps_catcher/package.xml -> /home/noor/gps_ws/install/gps_catcher/share/gps_catcher

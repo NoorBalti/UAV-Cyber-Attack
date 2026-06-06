@@ -1,0 +1,49 @@
+[0.761s] Invoking command in '/home/noor/gps_ws/src/gps_catcher': CMAKE_PREFIX_PATH=/home/noor/gps_ws/install/px4_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/noor/gps_ws/install/px4_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/noor/gps_ws/build/gps_catcher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages:/home/noor/gps_ws/install/px4_msgs/lib/python3.12/site-packages:/home/noor/gps_ws/install/px4_msgs/lib/python3.11/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages /usr/bin/python3.12 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gps_catcher build --build-base /home/noor/gps_ws/build/gps_catcher/build install --record /home/noor/gps_ws/build/gps_catcher/install.log --single-version-externally-managed install_data
+[1.007s] running egg_info
+[1.007s] creating ../../build/gps_catcher/gps_catcher.egg-info
+[1.025s] writing ../../build/gps_catcher/gps_catcher.egg-info/PKG-INFO
+[1.025s] writing dependency_links to ../../build/gps_catcher/gps_catcher.egg-info/dependency_links.txt
+[1.025s] writing entry points to ../../build/gps_catcher/gps_catcher.egg-info/entry_points.txt
+[1.025s] writing requirements to ../../build/gps_catcher/gps_catcher.egg-info/requires.txt
+[1.025s] writing top-level names to ../../build/gps_catcher/gps_catcher.egg-info/top_level.txt
+[1.025s] writing manifest file '../../build/gps_catcher/gps_catcher.egg-info/SOURCES.txt'
+[1.061s] reading manifest file '../../build/gps_catcher/gps_catcher.egg-info/SOURCES.txt'
+[1.062s] writing manifest file '../../build/gps_catcher/gps_catcher.egg-info/SOURCES.txt'
+[1.062s] running build
+[1.062s] running build_py
+[1.062s] creating /home/noor/gps_ws/build/gps_catcher/build
+[1.062s] creating /home/noor/gps_ws/build/gps_catcher/build/lib
+[1.062s] creating /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher
+[1.062s] copying gps_catcher/__init__.py -> /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher
+[1.062s] copying gps_catcher/listener.py -> /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher
+[1.062s] copying gps_catcher/listener (Copy).py -> /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher
+[1.062s] copying gps_catcher/spoofer.py -> /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher
+[1.063s] copying gps_catcher/gps_listener.py -> /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher
+[1.063s] copying gps_catcher/gps_listener (Copy).py -> /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher
+[1.063s] running install
+[1.069s] running install_lib
+[1.088s] creating /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher
+[1.088s] copying /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher/__init__.py -> /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher
+[1.088s] copying /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher/listener.py -> /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher
+[1.088s] copying /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher/listener (Copy).py -> /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher
+[1.088s] copying /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher/spoofer.py -> /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher
+[1.088s] copying /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher/gps_listener.py -> /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher
+[1.088s] copying /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher/gps_listener (Copy).py -> /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher
+[1.089s] byte-compiling /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher/__init__.py to __init__.cpython-312.pyc
+[1.089s] byte-compiling /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher/listener.py to listener.cpython-312.pyc
+[1.090s] byte-compiling /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher/listener (Copy).py to listener (Copy).cpython-312.pyc
+[1.091s] byte-compiling /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher/spoofer.py to spoofer.cpython-312.pyc
+[1.092s] byte-compiling /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher/gps_listener.py to gps_listener.cpython-312.pyc
+[1.093s] byte-compiling /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher/gps_listener (Copy).py to gps_listener (Copy).cpython-312.pyc
+[1.094s] running install_data
+[1.094s] creating /home/noor/gps_ws/install/gps_catcher/share/ament_index
+[1.094s] creating /home/noor/gps_ws/install/gps_catcher/share/ament_index/resource_index
+[1.094s] creating /home/noor/gps_ws/install/gps_catcher/share/ament_index/resource_index/packages
+[1.094s] copying resource/gps_catcher -> /home/noor/gps_ws/install/gps_catcher/share/ament_index/resource_index/packages
+[1.094s] copying package.xml -> /home/noor/gps_ws/install/gps_catcher/share/gps_catcher
+[1.094s] running install_egg_info
+[1.113s] Copying ../../build/gps_catcher/gps_catcher.egg-info to /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher-0.0.0-py3.12.egg-info
+[1.114s] running install_scripts
+[1.231s] Installing gps_listener script to /home/noor/gps_ws/install/gps_catcher/lib/gps_catcher
+[1.231s] writing list of installed files to '/home/noor/gps_ws/build/gps_catcher/install.log'
+[1.263s] Invoked command in '/home/noor/gps_ws/src/gps_catcher' returned '0': CMAKE_PREFIX_PATH=/home/noor/gps_ws/install/px4_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/noor/gps_ws/install/px4_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/noor/gps_ws/build/gps_catcher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages:/home/noor/gps_ws/install/px4_msgs/lib/python3.12/site-packages:/home/noor/gps_ws/install/px4_msgs/lib/python3.11/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages /usr/bin/python3.12 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gps_catcher build --build-base /home/noor/gps_ws/build/gps_catcher/build install --record /home/noor/gps_ws/build/gps_catcher/install.log --single-version-externally-managed install_data

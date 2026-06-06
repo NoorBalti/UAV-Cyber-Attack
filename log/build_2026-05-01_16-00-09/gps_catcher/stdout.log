@@ -1,0 +1,47 @@
+running egg_info
+creating ../../build/gps_catcher/gps_catcher.egg-info
+writing ../../build/gps_catcher/gps_catcher.egg-info/PKG-INFO
+writing dependency_links to ../../build/gps_catcher/gps_catcher.egg-info/dependency_links.txt
+writing entry points to ../../build/gps_catcher/gps_catcher.egg-info/entry_points.txt
+writing requirements to ../../build/gps_catcher/gps_catcher.egg-info/requires.txt
+writing top-level names to ../../build/gps_catcher/gps_catcher.egg-info/top_level.txt
+writing manifest file '../../build/gps_catcher/gps_catcher.egg-info/SOURCES.txt'
+reading manifest file '../../build/gps_catcher/gps_catcher.egg-info/SOURCES.txt'
+writing manifest file '../../build/gps_catcher/gps_catcher.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/noor/gps_ws/build/gps_catcher/build
+creating /home/noor/gps_ws/build/gps_catcher/build/lib
+creating /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher
+copying gps_catcher/__init__.py -> /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher
+copying gps_catcher/listener.py -> /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher
+copying gps_catcher/listener (Copy).py -> /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher
+copying gps_catcher/spoofer.py -> /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher
+copying gps_catcher/gps_listener.py -> /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher
+copying gps_catcher/gps_listener (Copy).py -> /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher
+running install
+running install_lib
+creating /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher
+copying /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher/__init__.py -> /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher
+copying /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher/listener.py -> /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher
+copying /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher/listener (Copy).py -> /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher
+copying /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher/spoofer.py -> /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher
+copying /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher/gps_listener.py -> /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher
+copying /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher/gps_listener (Copy).py -> /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher
+byte-compiling /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher/listener.py to listener.cpython-312.pyc
+byte-compiling /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher/listener (Copy).py to listener (Copy).cpython-312.pyc
+byte-compiling /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher/spoofer.py to spoofer.cpython-312.pyc
+byte-compiling /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher/gps_listener.py to gps_listener.cpython-312.pyc
+byte-compiling /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher/gps_listener (Copy).py to gps_listener (Copy).cpython-312.pyc
+running install_data
+creating /home/noor/gps_ws/install/gps_catcher/share/ament_index
+creating /home/noor/gps_ws/install/gps_catcher/share/ament_index/resource_index
+creating /home/noor/gps_ws/install/gps_catcher/share/ament_index/resource_index/packages
+copying resource/gps_catcher -> /home/noor/gps_ws/install/gps_catcher/share/ament_index/resource_index/packages
+copying package.xml -> /home/noor/gps_ws/install/gps_catcher/share/gps_catcher
+running install_egg_info
+Copying ../../build/gps_catcher/gps_catcher.egg-info to /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher-0.0.0-py3.12.egg-info
+running install_scripts
+Installing gps_listener script to /home/noor/gps_ws/install/gps_catcher/lib/gps_catcher
+writing list of installed files to '/home/noor/gps_ws/build/gps_catcher/install.log'

@@ -1,0 +1,52 @@
+[0.532s] Invoking command in '/home/noor/gps_ws/build/gps_catcher': AMENT_PREFIX_PATH=/home/noor/gps_ws/install/px4_msgs CMAKE_PREFIX_PATH=/home/noor/gps_ws/install/px4_msgs DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/noor/gps_ws/install/px4_msgs/lib PYTHONPATH=/home/noor/gps_ws/build/gps_catcher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages:/home/noor/gps_ws/install/px4_msgs/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/noor/gps_ws/build/gps_catcher/build
+[0.696s] running develop
+[0.780s] Removing /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps-catcher.egg-link (link to .)
+[0.804s] Invoked command in '/home/noor/gps_ws/build/gps_catcher' returned '0': AMENT_PREFIX_PATH=/home/noor/gps_ws/install/px4_msgs CMAKE_PREFIX_PATH=/home/noor/gps_ws/install/px4_msgs DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/noor/gps_ws/install/px4_msgs/lib PYTHONPATH=/home/noor/gps_ws/build/gps_catcher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages:/home/noor/gps_ws/install/px4_msgs/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/noor/gps_ws/build/gps_catcher/build
+[0.805s] Invoking command in '/home/noor/gps_ws/src/gps_catcher': AMENT_PREFIX_PATH=/home/noor/gps_ws/install/px4_msgs CMAKE_PREFIX_PATH=/home/noor/gps_ws/install/px4_msgs DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/noor/gps_ws/install/px4_msgs/lib PYTHONPATH=/home/noor/gps_ws/build/gps_catcher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages:/home/noor/gps_ws/install/px4_msgs/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gps_catcher build --build-base /home/noor/gps_ws/build/gps_catcher/build install --record /home/noor/gps_ws/build/gps_catcher/install.log --single-version-externally-managed install_data --force
+[0.942s] running egg_info
+[0.949s] writing ../../build/gps_catcher/gps_catcher.egg-info/PKG-INFO
+[0.949s] writing dependency_links to ../../build/gps_catcher/gps_catcher.egg-info/dependency_links.txt
+[0.950s] writing entry points to ../../build/gps_catcher/gps_catcher.egg-info/entry_points.txt
+[0.950s] writing requirements to ../../build/gps_catcher/gps_catcher.egg-info/requires.txt
+[0.950s] writing top-level names to ../../build/gps_catcher/gps_catcher.egg-info/top_level.txt
+[0.965s] reading manifest file '../../build/gps_catcher/gps_catcher.egg-info/SOURCES.txt'
+[0.966s] writing manifest file '../../build/gps_catcher/gps_catcher.egg-info/SOURCES.txt'
+[0.966s] running build
+[0.966s] running build_py
+[0.966s] creating /home/noor/gps_ws/build/gps_catcher/build
+[0.966s] creating /home/noor/gps_ws/build/gps_catcher/build/lib
+[0.966s] creating /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher
+[0.967s] copying gps_catcher/__init__.py -> /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher
+[0.967s] copying gps_catcher/listener.py -> /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher
+[0.967s] copying gps_catcher/listener (Copy).py -> /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher
+[0.967s] copying gps_catcher/hijacker.py -> /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher
+[0.967s] copying gps_catcher/spoofer.py -> /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher
+[0.967s] copying gps_catcher/gps_listener (Copy).py -> /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher
+[0.967s] copying gps_catcher/test.py -> /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher
+[0.967s] running install
+[0.972s] running install_lib
+[0.980s] creating /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher
+[0.980s] copying /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher/__init__.py -> /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher
+[0.980s] copying /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher/listener.py -> /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher
+[0.980s] copying /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher/listener (Copy).py -> /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher
+[0.981s] copying /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher/hijacker.py -> /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher
+[0.981s] copying /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher/spoofer.py -> /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher
+[0.981s] copying /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher/gps_listener (Copy).py -> /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher
+[0.981s] copying /home/noor/gps_ws/build/gps_catcher/build/lib/gps_catcher/test.py -> /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher
+[0.981s] byte-compiling /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher/__init__.py to __init__.cpython-312.pyc
+[0.981s] byte-compiling /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher/listener.py to listener.cpython-312.pyc
+[0.983s] byte-compiling /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher/listener (Copy).py to listener (Copy).cpython-312.pyc
+[0.983s] byte-compiling /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher/hijacker.py to hijacker.cpython-312.pyc
+[0.984s] byte-compiling /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher/spoofer.py to spoofer.cpython-312.pyc
+[0.985s] byte-compiling /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher/gps_listener (Copy).py to gps_listener (Copy).cpython-312.pyc
+[0.985s] byte-compiling /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher/test.py to test.cpython-312.pyc
+[0.987s] running install_data
+[0.987s] copying resource/gps_catcher -> /home/noor/gps_ws/install/gps_catcher/share/ament_index/resource_index/packages
+[0.987s] copying package.xml -> /home/noor/gps_ws/install/gps_catcher/share/gps_catcher
+[0.987s] running install_egg_info
+[0.996s] Copying ../../build/gps_catcher/gps_catcher.egg-info to /home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages/gps_catcher-0.0.0-py3.12.egg-info
+[0.997s] running install_scripts
+[1.059s] Installing gps_listener script to /home/noor/gps_ws/install/gps_catcher/lib/gps_catcher
+[1.059s] Installing hijacker script to /home/noor/gps_ws/install/gps_catcher/lib/gps_catcher
+[1.059s] writing list of installed files to '/home/noor/gps_ws/build/gps_catcher/install.log'
+[1.081s] Invoked command in '/home/noor/gps_ws/src/gps_catcher' returned '0': AMENT_PREFIX_PATH=/home/noor/gps_ws/install/px4_msgs CMAKE_PREFIX_PATH=/home/noor/gps_ws/install/px4_msgs DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/noor/gps_ws/install/px4_msgs/lib PYTHONPATH=/home/noor/gps_ws/build/gps_catcher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/noor/gps_ws/install/gps_catcher/lib/python3.12/site-packages:/home/noor/gps_ws/install/px4_msgs/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gps_catcher build --build-base /home/noor/gps_ws/build/gps_catcher/build install --record /home/noor/gps_ws/build/gps_catcher/install.log --single-version-externally-managed install_data --force

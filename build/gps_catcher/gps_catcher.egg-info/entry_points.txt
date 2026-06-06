@@ -1,0 +1,3 @@
+[console_scripts]
+gps_listener = gps_catcher.listener:main
+hijacker = gps_catcher.hijacker:main
