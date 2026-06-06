@@ -29,16 +29,24 @@ It integrates PX4, MAVLink, and Gazebo simulation to enable testing and developm
 ## Project Structure
 
 ```text
-gps_ws/
+UAV-Cyber-Attack/
+├── build/ 
+├── install/
+├── log/
 ├── src/
-│   ├── gps_catcher/
-│   ├── actuator_msgs/
-│   ├── custom_interfaces/
-│   └── ...
-├── launch/
-├── config/
-├── scripts/
-├── docs/
+│   ├── gps_catcher
+|   |    ├──gps_catcher
+|   |    ├──resource/
+|   |    ├──test/ 
+|   |    ├──package.xml 
+|   |    ├──setup.cfg 
+|   |    └──setup.py 
+|   |    
+|   |
+|   |
+|   |
+|   |
+│   └── px4_msgs/
 └── README.md
 ```
 
