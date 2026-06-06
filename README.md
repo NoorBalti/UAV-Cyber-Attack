@@ -21,31 +21,10 @@ It integrates PX4, MAVLink, and Gazebo simulation to enable testing and developm
 
 ## System Architecture
 
-```text
-+----------------+
-|  Ground Station|
-+--------+-------+
-         |
-         v
-+----------------+
-| ROS 2 Nodes    |
-+--------+-------+
-         |
-         v
-+----------------+
-| MAVLink Bridge |
-+--------+-------+
-         |
-         v
-+----------------+
-| PX4 Autopilot  |
-+--------+-------+
-         |
-         v
-+----------------+
-| UAV / Gazebo   |
-+----------------+
-```
+
+<img width="889" height="683" alt="image" src="https://github.com/user-attachments/assets/3d577046-7f7a-477e-8cba-c45c19bb0ae1" />
+
+
 
 ## Project Structure
 
