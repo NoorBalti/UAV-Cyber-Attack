@@ -1,6 +1,6 @@
 # UAV-Cyber-Attack
 
-> A ROS 2 and PX4-based framework for simulating GPS spoofing attacks against autonomous UAVs in a Software-In-The-Loop (SITL) environment.
+> A ROS 2 and PX4-based framework for simulating GPS spoofing and C2 attacks against autonomous UAVs in a Software-In-The-Loop (SITL) environment.
 
 ![PX4](https://img.shields.io/badge/PX4-Autopilot-blue)
 ![ROS2](https://img.shields.io/badge/ROS2-Jazzy-success)
