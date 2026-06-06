@@ -42,8 +42,6 @@ UAV-Cyber-Attack/
 |   |    |     ├── listener.py
 |   |    |     └── requirements.txt
 |   |    |     
-|   |    |
-|   |    |
 |   |    ├──resource/
 |   |    ├──test/ 
 |   |    ├──package.xml 
