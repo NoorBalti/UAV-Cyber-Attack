@@ -17,8 +17,7 @@ The framework enables researchers and students to:
 
 * Simulate GPS spoofing attacks
 * Analyze UAV behavior under malicious navigation data
-* Test attack-detection and mitigation strategies
-* Study cyber-physical security threats against autonomous systems
+* Simulate GCS mavlink packet injection attack
 
 ---
 
@@ -27,11 +26,10 @@ The framework enables researchers and students to:
 * PX4 Software-In-The-Loop (SITL) simulation
 * Gazebo Harmonic integration
 * Real-time GPS sensor bridging
-* Custom ROS 2 GPS listener node
-* Custom GPS hijacker/spoofer node
+* Custom ROS 2 GPS spoofer/listener node
+* Custom C2 link injector/hijacker node
 * Dynamic attack target injection
 * Attack activation/deactivation controls
-* Automated target landing functionality
 * QGroundControl integration
 * Modular ROS 2 architecture
 
@@ -60,7 +58,7 @@ The framework enables researchers and students to:
 ## Repository Structure
 
 ```text
-gps_ws/
+UAV-Cyber-Attack/
 │
 ├── src/
 │   ├── gps_catcher/
@@ -169,7 +167,7 @@ qgc
 
 # Attack Simulation
 
-## Publish Attack Target
+## GPS Spoofing Target Setting
 
 ```bash
 ros2 topic pub --once \
@@ -198,7 +196,7 @@ std_msgs/msg/Bool \
 
 ---
 
-# Trigger Autonomous Landing
+# Packet Injection Hijacking and Landing
 
 ```bash
 ros2 topic pub --once \
