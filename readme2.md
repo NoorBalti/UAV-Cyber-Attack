@@ -11,7 +11,7 @@
 
 ## Overview
 
-Modern autonomous drones rely heavily on Global Navigation Satellite Systems (GNSS) for localization and navigation. This project investigates the impact of GPS spoofing attacks on UAVs by creating a realistic simulation environment using PX4, Gazebo Harmonic, ROS 2 Jazzy, and QGroundControl.
+Modern autonomous drones rely heavily on Global Navigation Satellite Systems (GNSS) for localization and navigation. This project investigates the impact of GPS spoofing and C2 injection attacks on UAVs by creating a realistic simulation environment using PX4, Gazebo Harmonic, ROS 2 Jazzy, and QGroundControl.
 
 The framework enables researchers and students to:
 
