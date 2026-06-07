@@ -16,8 +16,8 @@ Modern autonomous drones rely heavily on Global Navigation Satellite Systems (GN
 The framework enables researchers and students to:
 
 * Simulate GPS spoofing attacks
-* Analyze UAV behavior under malicious navigation data
 * Simulate GCS mavlink packet injection attack
+* Analyze UAV behavior under malicious navigation data
 
 ---
 
