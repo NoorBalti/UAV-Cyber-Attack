@@ -1,8 +1,8 @@
-# Running the Project
+# Running The Project
 
 ## Requirements
 
-Make sure the following are already installed:
+Make sure the following are installed before you begin:
 
 * Ubuntu 24.04
 * ROS 2 Jazzy
@@ -47,16 +47,14 @@ source install/setup.bash
 
 Before running the project, disable the direct GPS connection between PX4 and Gazebo.
 
-PX4 should receive GPS data from the ROS nodes, not directly from Gazebo.
+PX4 should receive GPS data from the ROS nodes instead of directly from Gazebo.
 
 ```text
 Gazebo GPS
     ↓
 listener.py
     ↓
-hijacker.py
-    ↓
-PX4
+   PX4
 ```
 
 ---
@@ -72,7 +70,7 @@ make px4_sitl gz_x500
 
 ---
 
-## Step 6: Start Micro XRCE Agent
+## Step 6: Start Ros2-PX4 Bridge (Bridge-1)
 
 Open another terminal:
 
@@ -82,7 +80,7 @@ MicroXRCEAgent udp4 -p 8888
 
 ---
 
-## Step 7: Start the GPS Bridge
+## Step 7: Start Gazebo-Ros2 Bridge (Bridge-2)
 
 Open another terminal:
 
@@ -131,30 +129,52 @@ Wait for the vehicle to connect.
 
 ---
 
-## Step 11: Start the Attack
+# Attack Simulation
 
-Open a new terminal and run:
+Open a new terminal and run the commands below.
+
+## GPS Spoofing
+
+### Set the Fake GPS Location
 
 ```bash
-ros2 topic pub --once /start_attack std_msgs/msg/Bool "{data: true}"
+ros2 topic pub --once \
+/attack_target \
+sensor_msgs/msg/NavSatFix \
+"{latitude: 47.400, longitude: 8.550, altitude: 20.0}"
+```
+
+Replace the coordinates with your desired target location.
+
+### Start the Attack
+
+```bash
+ros2 topic pub --once \
+/start_attack \
+std_msgs/msg/Bool \
+"{data: true}"
+```
+
+### Stop the Attack
+
+```bash
+ros2 topic pub --once \
+/start_attack \
+std_msgs/msg/Bool \
+"{data: false}"
 ```
 
 ---
 
-## Step 12: Set the Fake GPS Location
+## Packet Injection Hijacking and Landing
 
-Example:
-
-```bash
-ros2 topic pub --once /attack_target sensor_msgs/msg/NavSatFix "{latitude: 47.400, longitude: 8.550, altitude: 20.0}"
-```
-
-Replace the coordinates with your desired location.
-
----
-
-## Step 13: Stop the Attack
+Publish a target landing location:
 
 ```bash
-ros2 topic pub --once /start_attack std_msgs/msg/Bool "{data: false}"
+ros2 topic pub --once \
+/trigger_target_landing \
+sensor_msgs/msg/NavSatFix \
+"{latitude: 47.397354, longitude: 8.547204, altitude: 0.0}"
 ```
+
+The UAV will attempt to land at the specified location.
