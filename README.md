@@ -204,6 +204,9 @@ ros2 topic pub --once \
 sensor_msgs/msg/NavSatFix \
 "{latitude: 47.397354, longitude: 8.547204, altitude: 0.0}"
 ```
+## Demo Video
+
+🎥 [Watch Demo](https://github.com/NoorBalti/UAV-Cyber-Attack/releases/tag/sample-video)
 
 ---
 
@@ -216,17 +219,6 @@ sensor_msgs/msg/NavSatFix \
 * Cyber-Physical Systems Security
 * Resilient Positioning Systems
 * Drone Security Education
-
----
-
-# Future Work
-
-* Multi-UAV attack scenarios
-* GPS spoofing detection algorithms
-* Machine-learning-based anomaly detection
-* Sensor fusion resilience testing
-* Hardware-in-the-Loop (HITL) support
-* Real-time attack visualization dashboard
 
 ---
 
