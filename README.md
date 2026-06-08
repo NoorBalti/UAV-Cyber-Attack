@@ -204,9 +204,11 @@ ros2 topic pub --once \
 sensor_msgs/msg/NavSatFix \
 "{latitude: 47.397354, longitude: 8.547204, altitude: 0.0}"
 ```
-# Demo
-<img width="1920" height="1080" alt="Screenshot from 2026-06-09 03-25-51" src="https://github.com/user-attachments/assets/9d63c280-8d50-458a-be12-275f2d0ac198" />
+---
 
+# Demo
+
+<img width="1920" height="1080" alt="Screenshot from 2026-06-09 03-25-51" src="https://github.com/user-attachments/assets/9d63c280-8d50-458a-be12-275f2d0ac198" />
 
 ---
 
