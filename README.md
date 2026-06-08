@@ -78,6 +78,14 @@ UAV-Cyber-Attack/
 
 ## Installation
 
+> ⚠️ **Important**
+>
+> This README provides a quick overview of the project.
+>
+> For complete step-by-step setup instructions, please see
+> [How_To_Run_On_Your_PC.md](How_To_Run_On_Your_PC.md).
+
+
 ### Clone Repository
 
 ```bash
