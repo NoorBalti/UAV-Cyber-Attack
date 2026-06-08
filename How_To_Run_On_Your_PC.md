@@ -1,158 +1,160 @@
-# Offensive Cyber Attack on UAVs In Simulated Enviroment
-
-In this part of our project, I have implemented two things:
-  1. Spoofing the drone gps sensor and trying to take it toward a specific location of our own.
-  2. Injectiong false packet into c2 links of drone and forcing the drone to move to and land at a location of our own
-
-## Overview
-
-This part of our project provides a ROS 2-based solution for offensive cyber attacks. 
-It integrates PX4, MAVLink, and Gazebo simulation to enable testing and development in a simulated enviroment.
-
-### Features
-
-* ROS 2 integration
-* PX4 flight controller support
-* MAVLink communication
-* Gazebo simulation environment
-* Real-time telemetry monitoring
-* GPS data processing
-* Custom ROS 2 nodes and messages
-
-## System Architecture
-
-
-<img width="889" height="683" alt="image" src="https://github.com/user-attachments/assets/3d577046-7f7a-477e-8cba-c45c19bb0ae1" />
-
-
-
-## Project Structure
-
-```text
-UAV-Cyber-Attack/
-├── build/ 
-├── install/
-├── log/
-├── src/
-│   ├── gps_catcher
-|   |    ├── gps_catcher/
-|   |    |     ├── __pycache__/
-|   |    |     ├── __init__.py/
-|   |    |     ├── hijacker.py
-|   |    |     ├── listener.py
-|   |    |     └── requirements.txt
-|   |    |     
-|   |    ├──resource/
-|   |    ├──test/ 
-|   |    ├──package.xml 
-|   |    ├──setup.cfg 
-|   |    └──setup.py 
-|   |
-│   └── px4_msgs/
-└── README.md
-```
+# Running the Project
 
 ## Requirements
 
-### Software
+Make sure the following are already installed:
 
 * Ubuntu 24.04
 * ROS 2 Jazzy
-* PX4 Autopilot
 * Gazebo Harmonic
+* PX4 Autopilot
+* QGroundControl
+* Micro XRCE Agent
 * Python 3.12
 
-### Python Dependencies
+---
+
+## Step 1: Clone the Repository
 
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/NoorBalti/UAV-Cyber-Attack.git
+cd UAV-Cyber-Attack
 ```
 
-## Installation
+---
 
-### Clone Repository
+## Step 2: Install Python Packages
 
 ```bash
-git clone <repository-url>
-cd <repository-name>
+pip install -r src/gps_catcher/gps_catcher/requirements.txt
 ```
 
-### Build Workspace
+---
+
+## Step 3: Build the ROS Package
 
 ```bash
 source /opt/ros/jazzy/setup.bash
 
-cd ~/gps_ws
-
-colcon build
+python3.12 -m colcon build --packages-select gps_catcher
 
 source install/setup.bash
 ```
 
-## Running the Project
+---
 
-### Launch Simulation
+## Step 4: Disable Direct GPS Connection
 
-```bash
-ros2 launch <package_name> <launch_file>.launch.py
-```
+Before running the project, disable the direct GPS connection between PX4 and Gazebo.
 
-### Run Node
-
-```bash
-ros2 run <package_name> <node_name>
-```
-
-## Example Usage
-
-```bash
-ros2 topic echo /gps/fix
-```
-
-```bash
-ros2 topic list
-```
-
-## Configuration
-
-Configuration files are located in:
+PX4 should receive GPS data from the ROS nodes, not directly from Gazebo.
 
 ```text
-config/
+Gazebo GPS
+    ↓
+listener.py
+    ↓
+hijacker.py
+    ↓
+PX4
 ```
 
-Adjust parameters as needed before launching the system.
+---
 
-## Results
+## Step 5: Start PX4
 
-Example outputs:
+Open a new terminal:
 
-* GPS coordinates received successfully
-* UAV telemetry streamed through ROS 2
-* Simulation running in Gazebo
+```bash
+cd ~/PX4-Autopilot
+make px4_sitl gz_x500
+```
 
-## Future Work
+---
 
-* Sensor fusion integration
-* Autonomous navigation
-* Mission planning support
-* Multi-UAV coordination
+## Step 6: Start Micro XRCE Agent
 
-## Contributing
+Open another terminal:
 
-Contributions are welcome.
+```bash
+MicroXRCEAgent udp4 -p 8888
+```
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit changes
-4. Open a pull request
+---
 
-## License
+## Step 7: Start the GPS Bridge
 
-Specify the project license here.
+Open another terminal:
 
-## Author
+```bash
+source /opt/ros/jazzy/setup.bash
 
-Your Name
+ros2 run ros_gz_bridge parameter_bridge \
+/world/default/model/x500_0/link/base_link/sensor/navsat_sensor/navsat@sensor_msgs/msg/NavSatFix[gz.msgs.NavSat
+```
 
-GitHub: https://github.com/yourusername
+---
+
+## Step 8: Start the GPS Listener
+
+Open another terminal inside the project folder:
+
+```bash
+source install/setup.bash
+
+ros2 run gps_catcher gps_listener
+```
+
+---
+
+## Step 9: Start the GPS Hijacker
+
+Open another terminal inside the project folder:
+
+```bash
+source install/setup.bash
+
+ros2 run gps_catcher hijacker
+```
+
+---
+
+## Step 10: Open QGroundControl
+
+Open another terminal:
+
+```bash
+qgc
+```
+
+Wait for the vehicle to connect.
+
+---
+
+## Step 11: Start the Attack
+
+Open a new terminal and run:
+
+```bash
+ros2 topic pub --once /start_attack std_msgs/msg/Bool "{data: true}"
+```
+
+---
+
+## Step 12: Set the Fake GPS Location
+
+Example:
+
+```bash
+ros2 topic pub --once /attack_target sensor_msgs/msg/NavSatFix "{latitude: 47.400, longitude: 8.550, altitude: 20.0}"
+```
+
+Replace the coordinates with your desired location.
+
+---
+
+## Step 13: Stop the Attack
+
+```bash
+ros2 topic pub --once /start_attack std_msgs/msg/Bool "{data: false}"
+```
